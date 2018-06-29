@@ -28,11 +28,27 @@ public class Home_Page {
     @AndroidFindBy(id = "android:id/title")
     public WebElement appTitle;
     
+    @AndroidFindBy(id = "io.selendroid.testapp:id/showToastButton")
+    public WebElement displayToast;
+    
+    @AndroidFindBy(id = "io.selendroid.testapp:id/showPopupWindowButton")
+    public WebElement displayPopup;
+    
+    
     public New_Registration_Page click_NewRegBttn()
     {
     	newRegBttn.click();
     	New_Registration_Page rp= new New_Registration_Page(driver);
     	return rp;
+    }
+    
+    public void click_displayToast()
+    {
+    	displayToast.click();
+    }
+    public void click_displayPopup()
+    {
+    	displayPopup.click();
     }
     
     

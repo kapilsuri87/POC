@@ -11,8 +11,13 @@ import cucumber.api.junit.Cucumber;
 		glue={"com/apium/poc/StepDefinition"},
 		plugin={"html:target/cucumber-html-report"},
 		dryRun = false,
+		//tags= {"@Prod"}, 
 		monochrome=false)
 
 public class TestRunner {
 
 }
+
+//ORed			: tags = {"@Smoke, @Regression"} 	To add condition for OR operator 
+//Anded			: tags = {"@Smoke", "@Regression"} 	To add condition for AND operator
+//Ignore Case	: tags = {"~@Smoke", "@Regression"} To ignore a set of test cases use ~ operator

@@ -24,7 +24,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class XlsReader {
-	//public static String filename = System.getProperty("user.dir")+"\\src\\main\\java\\com\\apium\\poc\\utilities\\testdata\\Test_Data.xlsx";
 	public  String path;
 	public  FileInputStream fis = null;
 	public  FileOutputStream fileOut =null;
